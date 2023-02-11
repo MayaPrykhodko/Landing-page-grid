@@ -14,18 +14,18 @@
     align-items: center;
 }
 
-.header-logo {
+.header__logo {
     justify-self: end;
 }
 
-.header-line {
+.header__line {
     border: 2px solid #000000;
     transform: rotate(90deg);
     width: 48px;
     height: 0px;
 }
 
-.header-text {
+.header__text {
     font-weight: 700;
     font-size: 13px;
 }
@@ -91,11 +91,11 @@
     border-right: 2px solid #000000;
 }
 
-.company-conten__item2 {
+.company-content__item2 {
     border-bottom: 2px solid #000000;
 }
 
-.company-conten__item3 {
+.company-content__item3 {
     border-right: 2px solid #000000;
 }
 
@@ -388,15 +388,15 @@
 }
 
 .contact-block__form input{
-    background: inherit;
     border: none;
-    width: inherit;
     height: inherit;
+    width: inherit;
+    background: inherit;
 }
 
 .contact-block__form input:focus{
-    outline-style: solid;
-    outline-width: 0,1px;
+    outline-style: none;
+    border-bottom:1px solid #000000;
 }
 
 .footer {
