@@ -296,7 +296,7 @@
     justify-self: center;
 }
 
-.service-button:hover{
+.service-button:hover {
     background-color: darkgrey;
     cursor: pointer;
 }
@@ -478,7 +478,7 @@
     }
 
     .header {
-        grid-template-columns: 140px 48px 92px 1fr;
+        grid-template-columns: 140px 48px 100px 1fr;
     }
 
     .banner__content {
@@ -739,7 +739,7 @@
 @media (max-width: 768px) {
 
     .grid {
-        grid-template-rows: 54px repeat(6, 604px) 54px;
+        grid-template-rows: 54px 500px repeat(5, 604px) 54px;
     }
 
     .banner__content {
@@ -794,7 +794,7 @@
     }
 
     .service-list__item {
-        grid-template-rows: 50px 40px 75px 40px 45px 24px 18px;
+        grid-template-rows: 50px 40px 75px 50px 45px 24px 14px;
     }
 
     .service-icon {
@@ -804,6 +804,15 @@
 
     .service-title {
         font-size: 14px;
+    }
+
+    .service-text {
+        font-size: 9px;
+    }
+
+    .service-conditions ul {
+        padding-inline-start: 15px;
+        font-size: 8px;
     }
 
     .extra-info {
@@ -866,7 +875,7 @@
 @media (max-width: 740px) {
 
     .grid {
-        grid-template-rows: 54px repeat(6, 570px) 54px;
+        grid-template-rows: 54px 490px repeat(5, 570px) 54px;
     }
 
     .header__text {
@@ -923,7 +932,7 @@
 
     .item-text {
         grid-column: 2;
-        justify-self: start;
+        text-align: start;
         padding-left: 10px;
         align-self: center;
     }
@@ -949,15 +958,6 @@
     .location-image-content {
         font-size: 10px;
         text-align: center;
-    }
-
-    .service-text {
-        font-size: 9px;
-    }
-
-    .service-conditions ul {
-        padding-inline-start: 15px;
-        font-size: 8px;
     }
 
     .extra-info {
@@ -1047,9 +1047,13 @@
     .service-title {
         font-size: 12px;
     }
-    
+
     .service-text {
         font-size: 8px;
+    }
+
+    .service-conditions ul {
+        padding-inline-start: 10px;
     }
 
     .service-price {
@@ -1137,7 +1141,7 @@
     }
 
     .banner__content {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .company-info {
@@ -1153,7 +1157,10 @@
         grid-template-rows: repeat(4, 50px);
     }
 
-    .company-content__item1, .company-content__item2, .company-content__item3, .company-content__item4 {
+    .company-content__item1,
+    .company-content__item2,
+    .company-content__item3,
+    .company-content__item4 {
         grid-template-columns: 170px minmax(150px, 220px);
     }
 
@@ -1183,7 +1190,8 @@
         column-gap: 5px;
     }
 
-    .location-image-content-left-part,.location-image-content-right-part{
+    .location-image-content-left-part,
+    .location-image-content-right-part {
         font-size: 9px;
     }
 
@@ -1231,5 +1239,33 @@
 
     .footer {
         grid-template-columns: 1fr 70px 32px;
+    }
+}
+
+@media (max-width: 460px) {
+    .location-images__item2 img {
+        min-height: 193px;
+    }
+
+    .service-list__item {
+        grid-template-rows: 40px 40px 84px 30px 24px;
+    }
+
+    .service-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        object-fit: contain;
+        position: relative;
+    }
+
+    .service-icon img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-conditions ul {
+        padding-inline-start: 7px;
     }
 }
