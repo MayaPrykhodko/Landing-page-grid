@@ -10,7 +10,7 @@
 
 .header {
     display: grid;
-    grid-template-columns: 180px 48px 92px 1fr;
+    grid-template-columns: 180px 48px 100px 1fr;
     align-items: center;
 }
 
@@ -1269,6 +1269,10 @@
 
     .service-conditions ul {
         padding-inline-start: 7px;
+    }
+
+    .service-price {
+        font-size: 8px;
     }
 
     .extra-info {
